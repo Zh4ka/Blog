@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Страница 1
+{% endblock title%}
+
+{% block body%}
+<div class="about">
+    <div class=" container-fixed">
+        <div class="d-flex justify-content-evenly align-items-center about-box ">
+            <div>
+                <div style="text-align: center">
+                    <h2 style="margin-bottom: 10px">Контакти</h2>
+                    <p style="margin-bottom: 0px">Есть влросы напишите. По адресу&nbsp;</p>
+                        <p><span style="color: #ef441c;">evgenijsturmak@gmail.com.</span></p>
+                </div>
+                <ul class="social-links nav d-flex justify-content-center" style="margin-bottom: 10px">
+                    <li>
+                        <img target="_blank" rel="nofollow" src="https://image.flaticon.com/icons/png/512/1400/1400829.png" class="social"></img>
+                    </li>
+                    <li>
+                        <img target="_blank" rel="nofollow" src="https://image.flaticon.com/icons/png/512/152/152827.png" class="social"></img>
+                    </li>
+                    <li>
+                        <img target="_blank" rel="nofollow" src="https://image.flaticon.com/icons/png/512/2530/2530586.png" class="social"></img>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <div name="FactAbout" class="d-flex justify-content-center bd-highlight" style="background: #eeecab">
+        <div class=" d-flex justify-content-center align-items-center p-2 bd-highlight">
+            <div class=" col-lg-6 col-md-8">
+                <h1 class="fw-light">Album example</h1>
+                <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+            </div>
+        </div>
+        <div class="p-2 bd-highlight">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-1" width="1100" height="500" src="{{url_for('static', filename='img/about/1.jpg')}}" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+        </div>
+    </div>
+<hr class="featurette-divider">
+    <div name="FactAbout" class="d-flex justify-content-evenly align-items-center bd-highlight" style="background: #d3fcb3">
+        <div class="p-2 bd-highlight">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-2" width="1100" height="500" src="{{url_for('static', filename='img/about/1.jpg')}}" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+        </div>
+        <div class="d-flex justify-content-center p-2 bd-highlight">
+            <div class="col-lg-6 col-md-8">
+                <h1 class="fw-light">Album example</h1>
+                <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+            </div>
+        </div>
+    </div>
+<hr class="featurette-divider">
+
+{% endblock body%}

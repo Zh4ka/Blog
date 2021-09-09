@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title%} {% endblock title%}
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/main.css')}}">
+</head>
+<body>
+<header class="p-3 bg-dark text-white">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-end mb-md-0">
+                <li><a href="/about" class="nav-link px-2 text-white">О себе</a></li>
+                <li><a href="/Hoby" class="nav-link px-2 text-white">Хоби</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                <li><a href="/home" type="button" class="btn btn-outline-light me-2">Главная</a></li>
+            </ul>
+
+        </div>
+    </div>
+</header>
+<main>
+{% block body%} {% endblock body%}
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-start">
+        <span class="text-muted">© 2021 Company, Inc</span>
+    </div>
+
+    <div class="col-md-4 d-flex">
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+    </ul>
+    </div>
+</footer>
+</main>
+</body>
+</html>
